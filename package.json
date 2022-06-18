@@ -1,0 +1,30 @@
+{
+  "name": "vscode-extension-starter",
+  "version": "0.0.2",
+  "description": "vscode extension starter",
+  "keywords": [
+    "vscode extension starter",
+    "vscode extension template"
+  ],
+  "license": "MIT",
+  "author": "tangdaoyuan <1197633750@qq.com> (https://github.com/tangdaoyuan/)",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "ext:build": "cd extension && tsup src/extension.ts --external vscode --sourcemap",
+    "ext:dev": "cd extension && tsup src/extension.ts --external vscode --watch src",
+    "ext:pack": "pnpm run ext:build && cd extension && vsce package --no-dependencies",
+    "ext:publish": "pnpm run ext:build && cd extension && vsce publish --no-dependencies"
+  },
+  "devDependencies": {
+    "@suger-tdy/eslint-config": "^1.1.4",
+    "@types/node": "^17.0.42",
+    "eslint": "^8.17.0",
+    "tsup": "^5.12.9",
+    "typescript": "^4.7.3",
+    "vitest": "^0.10.5"
+  }
+}
