@@ -1,1 +1,1 @@
-export default 'vscode-extension-src'
+export default 'vscode-color-json-picker'

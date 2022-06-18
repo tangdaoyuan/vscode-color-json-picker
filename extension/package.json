@@ -1,11 +1,11 @@
 {
-  "name": "tedystarter",
-  "displayName": "TedyStarter",
+  "name": "vscode-color-json-picker",
+  "displayName": "vscodeColorJsonPicker",
   "version": "0.0.2",
-  "description": "Tedy Vscode Extension Starter",
+  "description": "pick colors from json file",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tangdaoyuan/vscode-extension-starter",
+    "url": "https://github.com/tangdaoyuan/vscode-color-json-picker",
     "directory": "extension"
   },
   "engines": {
@@ -16,35 +16,15 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:tedystarter.helloTedy",
-    "onCommand:tedystarter.now"
+    "onCommand:now"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "tedystarter.helloTedy",
-        "title": "Hello Tedy"
-      },
-      {
-        "command": "tedystarter.now",
+        "command": "now",
         "title": "Now"
       }
     ]
-  },
-  "devDependencies": {
-    "@types/glob": "^7.2.0",
-    "@types/mocha": "^9.1.1",
-    "@types/node": "^14.18.21",
-    "@types/semver": "^7.3.9",
-    "@types/vscode": "^1.68.0",
-    "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "@typescript-eslint/parser": "^5.27.1",
-    "@vscode/test-electron": "^2.1.4",
-    "eslint": "^8.17.0",
-    "glob": "^8.0.3",
-    "mocha": "^9.2.2",
-    "semver": "^7.3.7",
-    "typescript": "^4.7.3"
   }
 }

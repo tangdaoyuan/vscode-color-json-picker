@@ -1,3 +1,3 @@
-# vscode-extension-starter
+# vscode-color-json-picker
 
-> My personal vscode extension starter 
+> Pick colors from json file in vscode
