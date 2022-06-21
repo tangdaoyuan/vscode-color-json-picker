@@ -16,14 +16,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:now"
+    "onCommand:author",
+    "onCommand:cc.default"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "now",
-        "title": "Now"
+        "command": "author",
+        "title": "Author"
+      },
+      {
+        "command": "cc.default",
+        "title": "Color JSON Picker Default"
       }
     ]
   }
