@@ -1,7 +1,7 @@
 {
   "name": "vscode-color-json-picker",
   "displayName": "vscodeColorJsonPicker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "pick colors from json file",
   "repository": {
     "type": "git",
