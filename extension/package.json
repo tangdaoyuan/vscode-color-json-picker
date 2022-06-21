@@ -24,6 +24,39 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "submenus": [
+      {
+        "id": "color_json_picker",
+        "label": "Color Json Picker"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "color_json_picker",
+          "group": "2_color_json_picker",
+          "when": "editorTextFocus && editorLangId == json"
+        }
+      ],
+      "color_json_picker": [
+        {
+          "command": "cc.default",
+          "title": "CC Default"
+        },
+        {
+          "command": "cc.all",
+          "title": "CC All (alpha and color)"
+        },
+        {
+          "command": "cc.alpha",
+          "title": "CC Alpha"
+        },
+        {
+          "command": "cc.color",
+          "title": "CC Color"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "author",
