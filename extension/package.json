@@ -17,7 +17,10 @@
   ],
   "activationEvents": [
     "onCommand:author",
-    "onCommand:cc.default"
+    "onCommand:cc.default",
+    "onCommand:cc.all",
+    "onCommand:cc.alpha",
+    "onCommand:cc.color"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -29,6 +32,18 @@
       {
         "command": "cc.default",
         "title": "Color JSON Picker Default"
+      },
+      {
+        "command": "cc.alpha",
+        "title": "Color JSON Picker With Alpha"
+      },
+      {
+        "command": "cc.color",
+        "title": "Color JSON Picker With Only Color"
+      },
+      {
+        "command": "cc.all",
+        "title": "Color JSON Picker With Only Color and Alpha"
       }
     ]
   }
